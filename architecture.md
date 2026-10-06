@@ -467,6 +467,8 @@ All About copy is the client's own text, verbatim except that hyphens before "we
 
 Unused or redundant code carried over from earlier iterations. None of it affects rendering; remove it during the port.
 
+**Status:** all items below were removed in the port to `index.html` / `styles/main.css` / `scripts/main.js`. Appendix A is kept as the prototype reference. The port also references the photograph from the stylesheet as `../assets/studio.jpg` (relative to `/styles/`, so it works under a sub-path too), and adds the §11 meta, a favicon (`assets/favicon.svg`) and an Open Graph still (`assets/og.jpg`).
+
 - `.label.bl` and `.label.br` rules (the removed scroll hint and timecode).
 - `--light` lists `Noto Sans KR` and `Noto Sans Tamil`, which are no longer loaded or needed.
 - `.w.odd:lang(hi) { letter-spacing: 0 }` duplicates the base rule.

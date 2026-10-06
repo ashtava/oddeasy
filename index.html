@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Odd Easy</title>
+<meta name="description" content="Odd Easy is a production house for ads, music videos and branded films. Shot, cut and finished in-house.">
+<meta name="theme-color" content="#586259">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Odd Easy">
+<meta property="og:description" content="Films · Ads · Music videos. Shot, cut and finished in-house.">
+<meta property="og:image" content="assets/og.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@800&family=Sarpanch:wght@900&family=Poppins:wght@400&family=Jost:wght@400&family=JetBrains+Mono:wght@400&family=Noto+Sans+Bengali:wght@800&family=Noto+Sans+Telugu:wght@800&family=Noto+Sans+Tamil:wght@800&family=Noto+Sans+Gujarati:wght@800&family=Noto+Sans+Arabic:wght@800&family=Noto+Sans+Kannada:wght@800&family=Noto+Sans+Oriya:wght@800&family=Noto+Sans+Malayalam:wght@800&display=swap">
+<link rel="preload" href="assets/studio.jpg" as="image">
+<link rel="stylesheet" href="styles/main.css">
+</head>
+<body class="intro">
+  <div class="field" aria-hidden="true">
+    <div class="light key" id="keyLight"></div>
+    <div class="light shade" id="shadeLight"></div>
+    <div class="vignette"></div>
+  </div>
+  <div class="grain" aria-hidden="true"></div>
+
+  <div class="scene" id="scene" aria-hidden="true">
+    <div class="photo" id="photo"></div>
+    <div class="scrim"></div>
+    <div class="film"></div>
+  </div>
+
+  <div class="frame" aria-hidden="true">
+    <div class="rule h t"></div><div class="rule h b seg-l"></div><div class="rule h b seg-r"></div>
+    <div class="rule v l"></div><div class="rule v r"></div>
+    <div class="rule v c1"></div><div class="rule v c2"></div>
+    <div class="rule h r1"></div><div class="rule h r2"></div>
+    <div class="mark-corner mc-tl"></div><div class="mark-corner mc-tr"></div>
+    <div class="mark-corner mc-bl"></div><div class="mark-corner mc-br"></div>
+  </div>
+
+  <div class="chrome" id="chrome">
+  <p class="label tl">Films · Ads · Music videos<br>Shot, cut and finished in-house</p>
+
+  <main class="mark">
+    <h1 class="words" id="words" aria-label="Odd Easy">
+      <span class="slot" id="oddSlot" data-which="odd"></span>
+      <span class="slot" id="easySlot" data-which="easy"></span>
+    </h1>
+  </main>
+
+  <div class="about-dock" id="dock"><button class="about-btn" id="aboutBtn" type="button" aria-controls="about" aria-expanded="false"><span class="flip"><span>About</span><span aria-hidden="true">About</span></span></button></div>
+
+  <div class="badge" aria-hidden="true">
+    <svg viewBox="0 0 100 100">
+      <defs><path id="ring" d="M50,50 m-38,0 a38,38 0 1,1 76,0 a38,38 0 1,1 -76,0"/></defs>
+      <text><textPath href="#ring" startOffset="0">Odd Easy · Films · Ads · Music videos · Production house · </textPath></text>
+      <circle class="dot" cx="50" cy="50" r="2.2"/>
+    </svg>
+  </div>
+  </div>
+
+  <div class="hero" id="hero" aria-hidden="true"></div>
+
+  <section class="about" id="about" aria-label="About">
+    <div class="about-inner">
+      <h2 class="tag"><span class="rev"><span>making things look cooler than they probably need to.</span></span></h2>
+      <div class="body">
+        <div class="rev"><p>We make ads, music videos, branded films, and whatever else gives us a good excuse to pick up a camera.</p></div>
+        <div class="rev"><p>From a random thought on a notes app to the final frame — we make, shoot, direct, create, overthink, and eventually deliver.</p></div>
+        <div class="rev"><p>If it can be imagined, shot and edited — we're probably interested.</p></div>
+        <div class="rev"><p class="closing">Good stories. Strong visuals. No unnecessary noise.</p></div>
+      </div>
+      <ul class="contact">
+        <li><span>Email</span><a href="mailto:oddeasyproductions@gmail.com">oddeasyproductions@gmail.com</a></li>
+        <li><span>Instagram</span><a href="https://instagram.com/_oddeasy" target="_blank" rel="noopener">@_oddeasy</a></li>
+        <li><span>WhatsApp</span><a href="https://wa.me/919234283982" target="_blank" rel="noopener">+91 92342 83982</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <div class="words measure" aria-hidden="true">
+    <span class="w odd" id="mOdd"></span><span class="w easy" id="mEasy"></span>
+  </div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/CustomEase.min.js"></script>
+<script src="scripts/main.js"></script>
+</body>
+</html>
