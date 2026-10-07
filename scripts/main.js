@@ -20,6 +20,7 @@
   const words = $('words');
   const mOdd = $('mOdd'), mEasy = $('mEasy');
   const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (reduce) $('bgVideo').pause();
   const G = window.gsap;
   if (G) G.registerPlugin(...[window.CustomEase].filter(Boolean));
 
